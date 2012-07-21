@@ -25,6 +25,21 @@ source :rubygems
 gem 'rack'
 ```
 
+You should use [bundler](https://devcenter.heroku.com/articles/bundler) to generate the `Gemfile.lock` file:
+
+```
+GEM
+  remote: http://rubygems.org/
+  specs:
+    rack (1.4.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rack
+```
+
 In `config.ru` file add the following:
 
 ```ruby
